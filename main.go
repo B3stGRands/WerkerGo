@@ -18,7 +18,7 @@ import (
       json.NewEncoder(res).Encode(cities)
       }
      
-func defaultHandler(res http.ResponseWriter, req *httpRequest) {
+func defaultHandler(res http.ResponseWriter, req *http.Request) {
     res.Header().Set("Content-Type", "test/plain; charset=utf-8")
     res.Write([]byte("Hello world!!"))
 }
