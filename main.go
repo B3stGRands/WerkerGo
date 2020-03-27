@@ -10,7 +10,7 @@ import (
     Cities []string `json:"cities"` // Cities capitalised to export it, otherwise json will ignore it.
     }
     
-    func cityHandler (res http.ResponseWrite, req *http.Request) {
+    func cityHandler (res http.ResponseWriter, req *http.Request) {
       cities := citiesResponse{
         Cities: []string{"Amsterdam", "Berlin", "New York", "San Francisco", "Tokyo"}}
       
