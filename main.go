@@ -20,7 +20,7 @@ import (
      
 func defaultHandler(res http.ResponseWriter, req *http.Request) {
     res.Header().Set("Content-Type", "test/plain; charset=utf-8")
-    res.Write([]byte("Hello world!!"))
+    res.Write([]byte("Hello World!!"))
 }
 
 func main() {
