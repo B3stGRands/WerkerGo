@@ -6,7 +6,7 @@ import (
 )
 func TestHandleIndexReturnsWithStatusOK(t *testing.T) {
     request, _ := http.NewRequest("GET", "/", nil)
-    response := httptest.NewReorder()
+    response := httptest.NewRecorder()
     
     cityHandler(response, request)
     if response.Code != http.StatusOK {
